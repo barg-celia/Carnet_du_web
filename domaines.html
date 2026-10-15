@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Les noms de domaine : de l'adresse au site | Mon carnet du Web</title>
+  <meta name="description" content="Qu'est-ce qu'un nom de domaine, comment est-il construit et comment le navigateur le retrouve grâce au DNS ? Une explication pour débutants.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+
+<body data-page="domaines">
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+
+  <div class="carnet">
+
+    <main class="feuille" id="contenu">
+      <h1>Les noms de domaine</h1>
+      <!-- À REMPLACER par ton introduction -->
+      <p class="chapo">Un nom facile à retenir à la place d'une suite de chiffres. Voyons comment ça marche.</p>
+
+      <h2>Pourquoi des noms ?</h2>
+      <!-- À REMPLACER par ton texte (vérifie-le avec tes sources) -->
+      <p>Pour se parler, les ordinateurs utilisent des adresses faites de chiffres. Le nom de domaine est un nom que les humains peuvent lire et retenir, et qui renvoie vers ces chiffres.</p>
+
+      <h2>Anatomie d'un nom de domaine</h2>
+      <!-- On réutilise les mêmes composants que sur la page URL -->
+      <p class="url-complete" aria-label="Exemple de nom de domaine : www.example.com">
+        <span class="partie partie--1">www.</span><span class="partie partie--2">example</span><span class="partie partie--3">.com</span>
+      </p>
+
+      <ol class="url-parties">
+
+        <li class="url-partie">
+          <div><code class="partie partie--1">www.</code></div>
+          <div>
+            <h3>Le sous-domaine</h3>
+            <p>Un préfixe qui peut désigner une section ou un service du site. « www » est le plus courant.</p>
+          </div>
+        </li>
+
+        <li class="url-partie">
+          <div><code class="partie partie--2">example</code></div>
+          <div>
+            <h3>Le nom</h3>
+            <p>La partie que choisit le propriétaire du site. C'est elle qui rend l'adresse reconnaissable.</p>
+          </div>
+        </li>
+
+        <li class="url-partie">
+          <div><code class="partie partie--3">.com</code></div>
+          <div>
+            <h3>L'extension</h3>
+            <p>La fin du nom. Elle peut indiquer un usage (« .org » pour des organisations) ou un pays (« .fr » pour la France).</p>
+          </div>
+        </li>
+
+      </ol>
+
+      <h2>Du nom au site : le rôle du DNS</h2>
+      <!-- À REMPLACER par ton explication. Les étapes ci-dessous sont un exemple simplifié. -->
+      <p>Quand tu tapes un nom de domaine, ton navigateur doit d'abord retrouver l'adresse chiffrée du site. Il passe par le DNS, une sorte d'annuaire du Web.</p>
+
+      <ol class="frise">
+
+        <li class="frise__etape">
+          <span class="frise__date">Étape 1</span>
+          <h3>Tu tapes le nom</h3>
+          <p>Tu écris l'adresse du site dans ton navigateur.</p>
+        </li>
+
+        <li class="frise__etape">
+          <span class="frise__date">Étape 2</span>
+          <h3>Le navigateur interroge le DNS</h3>
+          <p>Il demande à l'annuaire : « Quelle est l'adresse de ce nom ? »</p>
+        </li>
+
+        <li class="frise__etape">
+          <span class="frise__date">Étape 3</span>
+          <h3>Le DNS répond</h3>
+          <p>Il renvoie une adresse faite de chiffres, appelée adresse IP.</p>
+        </li>
+
+        <li class="frise__etape">
+          <span class="frise__date">Étape 4</span>
+          <h3>Le site s'affiche</h3>
+          <p>Le navigateur contacte le serveur à cette adresse, qui lui envoie la page.</p>
+        </li>
+          <img src="img/domaines.png" alt="Illustration d'un chemin du DNS" width="400" height="200">
+      </ol>
+
+      <aside class="post-it">
+        <h2>À retenir</h2>
+        <!-- À REMPLACER par ta phrase de conclusion -->
+        <p>Un nom de domaine est un nom lisible qui renvoie, grâce au DNS, vers l'adresse chiffrée d'un site.</p>
+      </aside>
+
+      <!-- Emplacement du jeu : le contenu sera ajouté avec le JavaScript -->
+      <section class="jeu" aria-labelledby="titre-jeu">
+        <h2 class="jeu__titre" id="titre-jeu">Jeu : associe chaque extension à son usage</h2>
+        <p>Ce jeu a besoin de JavaScript pour fonctionner.</p>
+      </section>
+
+      <a class="page-precedente" href="url.html">Page précédente</a>
+      <a class="page-suivante" href="standards.html">
+        <span>Tourne la page : Standards</span>
+      </a>
+    </main>
+
+    <nav class="onglets" aria-label="Navigation principale">
+      <a class="onglet onglet--accueil" href="index.html">
+        <span class="onglet__num" aria-hidden="true">A</span>
+        <span class="onglet__nom">Accueil</span>
+      </a>
+      <a class="onglet onglet--timeline" href="timeline.html">
+        <span class="onglet__num" aria-hidden="true">1</span>
+        <span class="onglet__nom">Timeline</span>
+      </a>
+      <a class="onglet onglet--url" href="url.html">
+        <span class="onglet__num" aria-hidden="true">2</span>
+        <span class="onglet__nom">URL</span>
+      </a>
+      <a class="onglet onglet--domaines" href="domaines.html" aria-current="page">
+        <span class="onglet__num" aria-hidden="true">3</span>
+        <span class="onglet__nom">Domaines</span>
+      </a>
+      <a class="onglet onglet--standards" href="standards.html">
+        <span class="onglet__num" aria-hidden="true">4</span>
+        <span class="onglet__nom">Standards</span>
+      </a>
+      <a class="onglet onglet--securite" href="securite.html">
+        <span class="onglet__num" aria-hidden="true">5</span>
+        <span class="onglet__nom">Sécurité</span>
+      </a>
+      <a class="onglet onglet--sources" href="sources.html">
+        <span class="onglet__num" aria-hidden="true">S</span>
+        <span class="onglet__nom">Sources</span>
+      </a>
+    </nav>
+
+  </div>
+
+</body>
+</html>
